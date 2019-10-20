@@ -43,6 +43,7 @@ body {
     margin:auto;
 }
 
+/* Navigace */
 
 .nav {
     /*background-color: none;*/
@@ -181,7 +182,7 @@ body {
 }
 
 
-
+/* Aside sekce */
 .aside{
     /*border: 1px solid black;*/
     margin-right: 5%;
@@ -190,6 +191,7 @@ body {
     height: 1000px;
     background-color: lightgray;
     font-family: Arial;
+    float: left;
     color: black;
 
 }
@@ -199,11 +201,10 @@ body {
     height: auto;
     max-height: 35px;
     padding-bottom: 10px;
-
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 175px;
 }
 
 
@@ -254,6 +255,9 @@ body {
 
 }
 
+
+
+/* Main sekce*/
 .content {
     float: left;
 
@@ -262,10 +266,10 @@ body {
 
 .main {
     /*background-color: none;*/
-    width: 70%;
+    width: 75%;
     height: 100%;
     margin-bottom: 40px;
-   
+    float: right;
 }
 
 .main h1 {
@@ -278,86 +282,43 @@ body {
 }
 
 .mainObrazek {
-
     position: relative;
-    float: left;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 30%;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    
-
-
+    float:left;
+    padding: 0 15px;
+    text-align: center;
 }
 
 .mainObrazek img {
     /*border: 1px solid black;*/
     border-radius: 500%;
     border: 4px solid lightgray;
-    max-width: 150px;
-    max-height: 150px;
-
+    width: 150px;
+    height: 150px;
 }
 
 .mainObrazek p {
-    padding-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-
-    position: relative;
-    
-    margin-bottom: 20px;
-    margin-top: -5 px;
-    background-position: center;
-    right:auto;
-    left: -45px;
-
     width: 100%;
-    margin: center;
-    
 }
 
 
 
 .mainObrazek a {
-  
-
-    position: relative;
-    float: left;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    margin-bottom: 20px;
-    margin-top: -5 px;
-    background-position: center;
-    right:auto;
-    left: -45px;
-
-    /*background-color: gainsboro;*/
-    width: 100%;
-    margin: center;
-
     font-size: 16px;
-    text-decoration: none;
-    position: absolute;
-    /*right: 25%;*/
-    /*bottom: 30px;*/
-    /*left: 25%;*/
-    /*z-index: 10;*/
-    /*padding-top: 20px;*/
-    /*padding-bottom: 20px;*/
+    text-decoration: underline;
     color: #fd9a00;
     text-align: center;
     text-shadow: 0 1px 1px rgba(0,0,0,.6);
 }
 
 .mainObrazek a:hover {
-    font-size: 18px;
+    font-size: 16px;
     color: lightgrey;
+}
 
+.mainArticle {
+    padding-bottom: 30px;
 }
 
 
@@ -369,22 +330,7 @@ body {
 
 
 
-
-
-
-
-.footer {
-    /*position: relative;*/
-    /*background-color: white;*/
-    /*height: 50px;*/
-    /*width: 100%;*/
-    /*background-color: #777;*/
-    padding: 20px;
-    text-align: center;
-    color: white;
-    position: absolute;
-
-}
+/* Footer sekce */
 
 .footerUl{
     text-decoration: none;
@@ -456,15 +402,16 @@ body {
 
 
 
-
-
+/* Zadost */
+.zadostMain {
+    width: 80%;
+}
 
 /*PRODUKTY*/
 
 .produktyMain {
-    width: 60%
+    width: 60%;
 }
-
 
 
 .produktyMain input[type=text], select {
@@ -495,11 +442,27 @@ body {
 
 
 input[type=text], select, textarea {
-    width: 100%;
+    /*width: 100%;*/
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    resize: vertical;
+    resize: none;
+    display: block;
+    width: calc(100% - 24px);
+}
+
+textarea {
+    height: 300px;
+    padding-bottom: 15px;
+}
+
+.btn-submit {
+    padding-top: 15px;
+}
+
+.margin-x-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 label {
@@ -555,21 +518,18 @@ input[type=submit]:hover {
 }
 
 .footerProdukty {
-    position: fixed;;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: left;
+    background-color: lightgray;
+    margin-left: 0px;
+    margin-bottom: 0px;
 }
 
+.footer {
+    clear: both;
+}
 
 .footer h6 {
-
     font-size: 20px;
-    margin-bottom: 0px;
     color: black;
-    margin-left: 0px;
-    background-color: lightgray;
 }
 
 
@@ -577,11 +537,7 @@ input[type=submit]:hover {
     width: 30px;
     height: 30px;
     float: left;
-    
-    padding-bottom: 10%; 
-    
-    
-
+    padding-bottom: 10%;
 }
 
 

@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Žádost o zaslání materiálu</title>
-
-
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body>
 <body>
 
 
 <header class="header">
     <div class="divLogo">
-        <img class="logo" src="../OBRAZKY/logo2.jpg">
+        <img alt class="logo" src="../OBRAZKY/logo2.jpg" >
     </div>
 
     <ul class="navULCislo">
@@ -23,16 +20,14 @@
         </h5>
         </li>
         <li>
-            <img src="../OBRAZKY/telefonIkona.jpg">
-            <a href="none">+420 220 294 490</a>
-
+            <img alt="Kontakt na nás" src="../OBRAZKY/telefonIkona.jpg">
+            <a href="tel:+420220294490">+420 220 294 490</a>
         </li>
     </ul>
 
 </header>
 
 <div class="body1">
-
     <nav class="nav">
         <div class="navU1Div">
             <ul class="navUl">
@@ -45,15 +40,13 @@
                 <!--<li><a href="kariera.html">KARIÉRA</a></li>-->
             </ul>
         </div>
-
     </nav>
 
-
-    <main class="  produktyMain">
-
-
+    <main class="zadostMain margin-x-auto">
         <div class="container">
+            <h1>ŽÁDOST O ZASLÁNÍ MATERIÁLU</h1>
             <form action="">
+
                 <div class="row">
                     <div class="col-25">
                         <label for="fname">First Name</label>
@@ -62,6 +55,7 @@
                         <input type="text" id="fname" name="firstname" placeholder="Your name..">
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-25">
                         <label for="lname">Last Name</label>
@@ -70,6 +64,7 @@
                         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-25">
                         <label for="country">Country</label>
@@ -82,25 +77,25 @@
                         </select>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-25">
                         <label for="subject">Subject</label>
                     </div>
                     <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder="Write something.."
-                                  style="height:200px"></textarea>
+                        <div>
+                            <textarea id="subject" name="subject" placeholder="Write something..."></textarea>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <input type="submit" value="Submit">
+
+                <div class="row btn-submit">
                     <input type="submit" value="Submit">
                 </div>
+
             </form>
         </div>
-
-
     </main>
-
-
+</div>
 </body>
 </html>
