@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Žádost o zaslání materiálu</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+
+<header class="header">
+    <div class="logo-header">
+        <img alt="Logo" class="logo-image" src="../OBRAZKY/logo2.jpg" >
+    </div>
+
+    <ul class="header-number-list">
+
+        <li><h5>
+            Neváhejte a kontaktujte nás
+        </h5>
+        </li>
+        <li>
+            <img alt="Kontakt na nás" src="../OBRAZKY/telefonIkona.jpg">
+            <a href="tel:+420220294490">+420 220 294 490</a>
+        </li>
+    </ul>
+
+</header>
+
+<div class="body-of-web">
+    <nav class="navigation">
+        <div class="navigation-list-box">
+            <ul class="navigation-list">
+                <li><a href="index.html">HLAVNÍ STRÁNKA</a></li>
+                <li><a href="zadost.html">ŽÁDOST O ZASLÁNÍ MATERIÁLU</a></li>
+                <li><a href="objednavky.html">OBJEDNÁVKY</a></li>
+                <li><a href="aktuality.html">AKTUALITY</a></li>
+                <li><a href="kontakty.html">KONTAKTY</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="material-main margin-x-auto">
+
+
+
+
+        <div class="container">
+            <h1>ŽÁDOST O ZASLÁNÍ MATERIÁLU</h1>
+            <form action="index.html" method="post" >
+
+
+
+                <div class="material-box-types">
+                    <div class="material-form-types-label-box">
+                        <label for="fname">Jméno</label>
+                    </div>
+                    <div class="material-form-types-input-box">
+                        <input type="text" id="fname" name="kjmeno" placeholder="Vaše jméno..">
+                    </div>
+                </div>
+
+                <div class="material-box-types">
+                    <div class="material-form-types-label-box">
+                        <label for="lname">Příjmení</label>
+                    </div>
+                    <div class="material-form-types-input-box">
+                        <input type="text" id="lname" name="prijmeni" placeholder="Vaše příjmení..">
+                    </div>
+                </div>
+
+
+                <div class="material-box-types">
+                    <div class="material-form-types-label-box">
+                        <label for="country">Země</label>
+                    </div>
+                    <div class="material-form-types-input-box">
+                        <select id="country" name="zeme">
+                            <option value="Czech Republic">Česká republika</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Kanada">Canada</option>
+                            <option value="USA">USA</option>
+                            <option value="SK">Slovenská reublika</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="material-box-types">
+                    <div class="material-form-types-label-box">
+                        <label for="phone">Telefonní číslo</label>
+                    </div>
+                    <div class="material-form-types-input-box">
+                        <input type="tel" id="phone" name="phone" placeholder="Telefonní číslo..">
+                    </div>
+                </div>
+
+                <div class="material-box-types">
+                    <div class="material-form-types-label-box">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="material-form-types-input-box">
+                        <input type="email" id="email" name="email" placeholder="E-mail..">
+                    </div>
+                </div>
+
+                <div class="material-box-types">
+                    <div class="material-form-types-label-box">
+                        <label for="tel-consultation">Telefonická konzultace</label>
+                    </div>
+                    <div class="material-form-types-input-box">
+                        <input type="checkbox" id="tel-consultation" name="tel-consultation" >
+                    </div>
+                </div>
+
+                <div class="material-box-types">
+                    <div class="material-form-types-label-box">
+                        <label for="tips">Katalog kontaktních hrotů</label>
+                    </div>
+                    <div class="material-form-types-input-box">
+                        <input type="checkbox" id="tips" name="tips" >
+                    </div>
+                </div>
+
+                <div class="material-box-types">
+                    <div class="material-form-types-label-box">
+                        <label for="commodity">Zboží</label>
+                    </div>
+                    <div class="material-form-types-input-box">
+                        <input type="text" id="commodity" name="commodit" placeholder="Zboží..">
+                    </div>
+                </div>
+
+
+
+
+                <div class="material-box-types">
+                    <div class="material-form-types-label-box">
+                        <label for="info-text">Ostatní žádosti</label>
+                    </div>
+                    <div class="material-form-types-input-box">
+                        <div>
+                            <textarea id="info-text" name="info-text" placeholder="Doplňující text žádosti..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="material-box-types btn-submit">
+                    <input type="submit" value="ODESLAT">
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h6>©2019 Technikpartner s.r.o</h6>
+    </footer>
+</div>
+
+</body>
+</html>
